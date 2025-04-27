@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 100%;
+  scroll-padding-top: 120px; 
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+  overflow-x: hidden;
+  color: black;
+  font-weight: 300;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  margin-top: 20px;
+  background: transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 3rem;
+  color: palevioletred;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  text-align: center;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 15rem;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+  color: palevioletred;
+  border-bottom: 3px solid palevioletred;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-500px);
+  backdrop-filter: blur(4px) brightness(40%);
+  box-shadow: 0 0 20px pink;
+  transition: transform 0.2s linear;
+  z-index: 1000;
+}
+
+.dropdown .links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  transition: background-color 0.2s linear;
+}
+
+.dropdown .links a:hover {
+  background-color: palevioletred;
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9%;
+}
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: pink;
+}
+
+.home .home-content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-img {
+    border-radius: 50%;
+    margin-right: 4rem;
+  }
+  
+  .home-img img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px palevioletred;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+  }
+  .short-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    color: #444;
+  }
+
+
+span {
+  color: deeppink;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+
+.home-img {
+  border-radius: 50%;
+}
+
+.home-img img {
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px palevioletred;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: palevioletred;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(deeppink, purple);
+}
